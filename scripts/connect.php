@@ -5,7 +5,10 @@ $dbname = "amelin";
 $dbuser = "root";
 $dbpasswd = "";
 
-$mysqli = new mysqli("p:".$dblocation, $dbuser, $dbpasswd, $dbname);
-$mysqli->set_charset("utf8");
+$connect = mysqli_connect('localhost', 'root', '', 'amelin');
+
+    if (!$connect) {
+        die('Error connect to DataBase');
+    }
 
 ?>

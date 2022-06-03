@@ -1,54 +1,117 @@
-body {
-    background: url(..images/jpg); /* Параметры фона */
-    background-size: cover; /* Фон занимает всю доступную площадь */
+* {
+    font: Arial, sans-serif;
+    color: black;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    align-content: center;
     justify-content: center;
-} 
+    overflow: auto;
+    background: url(../images/background.jpg); /* Параметры фона */
+    background-size: cover; /* Фон занимает всю доступную площадь */
+}
 
 .main {
     width: 1200px;
     height: 700px;
     background: silver;
+    border: 1px solid black;
 }
 
-#navbar ul {
-display: none;
-background-color: #f90;
-position: absolute; 
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
 }
-#navbar li:hover ul { display: block; }
-#navbar, #navbar ul {
-margin: 0;
-padding: 0;
-list-style-type: none;
-}
-#navbar {
-height: 60px;
-background-color: #666;
-padding-left: 0px;
-width: 1200px;
-}
-#navbar li {
-float: left;
-position: relative;
-height: 100%;
-}
-#navbar li a {
-display: block;
 
-width: 200px;
-height: 60px;
-color: #fff;
-
-text-decoration: none;
-text-align: center;
+.nav a {
+    width: 17%;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #666;
 }
-#navbar ul li { float: none; }
-#navbar li:hover { background-color: #f90; }
-#navbar ul li:hover { background-color: #666; }
 
+.nav a:first-child {
+    border-left: none;
+}
 
+.nav a:hover {
+    background-color: #f90;
+}
+
+.table {
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    border: 5px solid #fff;
+
+    border-top: 5px solid #fff;
+
+    border-bottom: 3px solid #fff;
+
+    border-collapse: collapse; 
+
+    outline: 3px solid #ffd300;
+
+    font-size: 15px;
+
+    background: #fff!important;
+
+}
+
+.table th {
+
+    font-weight: bold;
+
+    padding: 7px;
+
+    background: #ffd300;
+
+    border: none;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    border-top: 3px solid #fff;
+
+    border-bottom: 3px solid #ffd300;
+
+}
+
+.table td {
+
+    padding: 7px;
+
+    border: none;
+
+    border-top: 3px solid #fff;
+
+    border-bottom: 3px solid #fff;
+
+    font-size: 15px;
+
+}
+
+.table tbody tr:nth-child(even){
+
+    background: #f8f8f8!important;
+
+}
 
 .vertical-menu {
 width: 400px;

@@ -1,0 +1,74 @@
+body {
+    background: url(..images/jpg); /* Параметры фона */
+    background-size: cover; /* Фон занимает всю доступную площадь */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+.main {
+    width: 1200px;
+    height: 700px;
+    background: silver;
+}
+
+#navbar ul {
+display: none;
+background-color: #f90;
+position: absolute; 
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+#navbar {
+height: 60px;
+background-color: #666;
+padding-left: 0px;
+width: 1200px;
+}
+#navbar li {
+float: left;
+position: relative;
+height: 100%;
+}
+#navbar li a {
+display: block;
+
+width: 200px;
+height: 60px;
+color: #fff;
+
+text-decoration: none;
+text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #f90; }
+#navbar ul li:hover { background-color: #666; }
+
+
+
+.vertical-menu {
+width: 400px;
+}
+
+.vertical-menu a {
+
+background-color: #eee;
+color: black;
+display: flex;
+flex-direction: сolumn;
+justify-content: center;
+padding: 12px;
+text-decoration: none;
+text-align: center;
+
+}
+
+.vertical-menu a:hover {
+background-color: #f90;
+}
+
+

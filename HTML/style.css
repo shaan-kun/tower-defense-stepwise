@@ -58,21 +58,19 @@
 
 
 .vertical-menu {
-	border: 1px solid black;
+	text-align: center;
     display: flex;
 	justify-content: center;
-	flex-direction: column; aling-items: center;
-	
+	flex-direction: column; 
+	aling-items: center;
+	height: 80%;
 }
 
 .vertical-menu a {
     background-color: #eee;
     color: black;
-    display: flex;
-	flex-direction: column; aling-items: center;
     padding: 12px;
     text-decoration: none;
-	text-align: center;
 	margin-top: 10px;
 }
 
@@ -80,4 +78,43 @@
     background-color: #f90;
 }
 
+.center {
+	display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 80%;
+	
+}
 
+.table {
+	width: 80%;
+	margin-bottom: 20px;
+	border: 5px solid #fff;
+	border-top: 5px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-collapse: collapse; 
+	outline: 3px solid #ffd300;
+	font-size: 15px;
+	background: #fff!important;
+}
+.table th {
+	font-weight: bold;
+	padding: 7px;
+	background: #ffd300;
+	border: none;
+	text-align: left;
+	font-size: 15px;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #ffd300;
+}
+.table td {
+	padding: 7px;
+	border: none;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	font-size: 15px;
+}
+.table tbody tr:nth-child(even){
+	background: #f8f8f8!important;
+}

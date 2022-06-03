@@ -16,6 +16,8 @@
 		width: 1200px;
 		height: 700px;
 		background: silver;
+		display: table;
+        margin: 0 auto;
 		}
 		
   #navbar ul {
@@ -57,7 +59,9 @@
 
 
 .vertical-menu {
-    width: 400px;
+    margin-top: 200px;
+	margin-left: 400px;
+	width: 400px;
 }
 
 .vertical-menu a {
@@ -65,12 +69,11 @@
     background-color: #eee;
     color: black;
     display: flex;
-    flex-direction: сolumn;
-    justify-content: center;
+	flex-direction: column; aling-items: center;
     padding: 12px;
     text-decoration: none;
 	text-align: center;
-	
+	margin-top: 10px;
 }
 
 .vertical-menu a:hover {

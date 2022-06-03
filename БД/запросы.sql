@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS user(
 	user_id INT PRIMARY KEY AUTO_INCREMENT,
 	login VARCHAR(30) NOT NULL UNIQUE,
-	password VARCHAR(30),
+	password VARCHAR(32),
 	reg_date DATETIME DEFAULT "1970-01-01 00:00:00",
 	game_count INT,
 	game_win INT,

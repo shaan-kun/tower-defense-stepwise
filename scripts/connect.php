@@ -1,7 +1,7 @@
 <?php
 
 $dblocation = "localhost";
-$dbname = "Users";
+$dbname = "amelin";
 $dbuser = "root";
 $dbpasswd = "";
 

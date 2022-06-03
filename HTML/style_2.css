@@ -1,0 +1,19 @@
+table {
+    table-layout: fixed;
+    width: 60%;
+    border-collapse: collapse;
+    text-align: center;
+    position:relative;
+    border-bottom: 4px solid maroon;
+    background: grey;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 150px;
+  }
+  tr:nth-child(1){
+    background: black;
+    color: white;
+    height: 40px;
+    font-size: 1.2rem;
+    
+  }

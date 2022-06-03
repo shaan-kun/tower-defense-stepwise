@@ -3,6 +3,10 @@
 <meta charset="utf-8" />
 <title>Tower Defense Stepwise</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<script src="jquery.js"></script>
+	<link href="style_2.css" rel="stylesheet" type="text/css">
+
+  
 </head>
 
 <body background="https://i.imgur.com/BNKoSvg.jpg">
@@ -18,11 +22,37 @@
     </ul>
 </div>
 
-Рейтинг
+
 
 </div>
 
+<script>
+  $(setInterval(function() {
+    $.post('getData.php', {}, function(data) {
+      $('table').remove();
 
+      data = JSON.parse(data);
+      
+      string = '<table><tr><th>Nickname</th><th>Count game</th><th>Wins</th><th>Loses</th><th>Score</th></tr>';
+
+      for (let item of data)
+      {
+        string += '<tr>';
+          string += '<td>' + item.login + '</td>';
+          string += '<td>' + item.game_count + '</td>';
+          string += '<td>' + item.game_win + '</td>';
+          string += '<td>' + item.game_loss + '</td>'
+          string += '<td>' + item.score + '</td>';
+        string += '</tr>';
+      }
+
+      string += '</table>';
+
+      $('.main').append(string);
+    });
+  }),1000);
+  
+</script>
 
 </body>
 
